@@ -2,7 +2,7 @@
  * Application starter.
  * DO NOT MODIFY.
  */
-public class Main {
+public class Main  {
     public static void main(String[] args) {
         Executor e = new Executor();
         e.execute();

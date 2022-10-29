@@ -23,41 +23,42 @@ public class Director extends Approver {
         boolean result = false;
 
         switch (type) {
+        
             case CONSUMABLES:
                 if (cost < 500) {
                     result = true;
                     return result;
-                } else {
-                    break;
-                }
+                } 
+                break;
+                
             case CLERICAL:
                 if (cost < 1000) {
                     result = true;
                     return result;
-                } else {
-                    break;
                 }
+                break;
+                
             case GADGETS:
                 if (cost < 1500) {
                     result = true;
                     return result;
-                } else {
-                    break;
-                }
+                } 
+                break;
+                
             case GAMING:
-                if (cost < 3000) {
+                if (cost < 3500) {
                     result = true;
                     return result;
-                } else {
-                    break;
                 }
+                break;
+                
             case PC:
                 if (cost < 6000) {
                     result = true;
                     return result;
-                } else {
-                    break;
                 }
+                break;
+                
             default:
                 result = false;
                 return result;
